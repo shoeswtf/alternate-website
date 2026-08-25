@@ -1,0 +1,65 @@
+---
+layout: default
+permalink: /
+title: Home
+---
+
+<section class="hero hero--home">
+  <div class="shell">
+    <p class="kicker" data-reveal>{{ site.tagline }}</p>
+    <h1 data-reveal>Made for your feet.<br>All 26 bones of them.</h1>
+    <div class="stitch" aria-hidden="true" data-reveal></div>
+    <p class="lede" data-reveal>
+      We measure, fit, and stitch every pair by hand in the
+      {{ site.city }} studio &mdash; built on a wooden last adjusted to
+      your feet and nobody else&rsquo;s.
+    </p>
+    <div class="hero__actions" data-reveal>
+      <a class="btn" href="{{ '/fitting/' | relative_url }}">See how we fit</a>
+      <a class="btn btn--ghost" href="{{ '/contact/' | relative_url }}">Book a fitting</a>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="shell features__grid">
+    <a class="feature-card" href="{{ '/fitting/' | relative_url }}" data-reveal>
+      <span class="feature-card__glyph" aria-hidden="true">
+        <svg viewBox="0 0 48 48"><path d="M8 34c6-2 7-14 14-18 5.5-3 12-1.4 15 3l2 7c-9 0-12 5-18 8z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+      </span>
+      <h2>Measured, not guessed</h2>
+      <p>Eight measurements, both feet, standing up &mdash; plus the anatomy
+      lesson that explains why they matter.</p>
+      <span class="feature-card__more">Walk through the fitting &rarr;</span>
+    </a>
+
+    <a class="feature-card" href="{{ '/about/' | relative_url }}" data-reveal>
+      <span class="feature-card__glyph" aria-hidden="true">
+        <svg viewBox="0 0 48 48"><path d="M10 30c0-8 6-16 14-16s14 8 14 16l-4 6H14z M24 14v22 M17 20l-3 16 M31 20l3 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+      </span>
+      <h2>A last that fits you</h2>
+      <p>We keep a library of production lasts and adjust each one to your
+      measurements &mdash; fitted to your foot, not carved from scratch.</p>
+      <span class="feature-card__more">How made-to-measure works &rarr;</span>
+    </a>
+
+    <a class="feature-card" href="{{ '/contact/' | relative_url }}" data-reveal>
+      <span class="feature-card__glyph" aria-hidden="true">
+        <svg viewBox="0 0 48 48"><path d="M12 36V16l12-6 12 6v20 M12 36h24 M18 36v-8h12v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+      </span>
+      <h2>Built to be resoled</h2>
+      <p>Goodyear-welted construction means a lifetime of new soles instead
+      of a trip to the landfill.</p>
+      <span class="feature-card__more">Plan a visit &rarr;</span>
+    </a>
+  </div>
+</section>
+
+<section class="quote-band">
+  <div class="shell" data-reveal>
+    <blockquote>
+      &ldquo;A shoe should be noticed by the foot,<br>never by the wearer.&rdquo;
+    </blockquote>
+    <p class="quote-band__cite">&mdash; chalked above our bench since day one</p>
+  </div>
+</section>

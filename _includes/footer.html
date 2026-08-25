@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="shell site-footer__grid">
+    <div>
+      <p class="site-footer__brand">{{ site.title }}</p>
+      <p>{{ site.tagline }}. Every pair started as a plank of leather and a set of measurements.</p>
+    </div>
+    <div>
+      <h3>Visit</h3>
+      <p>{{ site.address }}<br>{{ site.city }}</p>
+      <p>Tue&ndash;Sat, 10am&ndash;6pm</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a><br><a href="tel:{{ site.phone | remove: ' ' }}">{{ site.phone }}</a></p>
+      <p class="site-footer__fine">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Fitted by hand.</p>
+    </div>
+  </div>
+</footer>
