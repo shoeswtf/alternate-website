@@ -11,9 +11,9 @@ itself.
 | Page | Path | What it does |
 |---|---|---|
 | Home | `/` | Hero, feature cards, quote band |
-| The Fitting | `/fitting/` | Sticky foot-skeleton diagram that highlights each bone as you scroll, animated measurement diagrams, step-by-step fitting process with progress rail |
+| The Fitting | `/fitting/` | Sticky foot-skeleton diagram (top/side toggle) highlighting bones and girth tape-loops as you scroll, animated measurement diagrams incl. boot fitting, step-by-step process with progress rail |
 | The Studio | `/about/` | About / craft philosophy |
-| Book a Fitting | `/contact/` | Contact details + demo form |
+| Book a Fitting | `/contact/` | Contact details + what to expect |
 
 ## Run locally
 
@@ -56,9 +56,11 @@ A `CNAME` file is already included. To finish wiring it up:
 - **Name, address, email, phone** → top of `_config.yml`
 - **Colors & fonts** → variables at the top of `assets/css/style.scss`
 - **Bone copy / measurements / steps** → `fitting.html`
-- **Foot diagram** → the SVG inside `fitting.html` (top view of a right
-  foot, vector-traced from the studio's reference image); each bone group
-  has an id like `bone-talus`, wired to cards via `data-bone`
+- **Foot diagrams** → the two SVGs inside `fitting.html`. The top view was
+  vector-traced from a color-coded reference image with
+  `tools/extract_foot_svg.py`; the side view is hand-fitted over a traced
+  silhouette. Bone groups carry `data-bone` attributes wired to the scroll
+  cards; the dashed tape loops (`data-girth`) light up on the girth cards.
 
-The contact form is a mailto placeholder; swap it for Formspree or
-Netlify Forms when you deploy.
+The contact page is deliberately form-free — email is the booking
+channel. Add Formspree or Netlify Forms markup if you ever want a form.

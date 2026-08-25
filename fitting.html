@@ -24,34 +24,38 @@ title: The Fitting — Bones, Measurements & Process
   <div class="shell anatomy__grid">
     <div class="anatomy__stage-col">
       <div class="anatomy__stage">
+        <div class="anatomy__tabs" role="group" aria-label="Diagram viewpoint">
+          <button class="anatomy__tab is-active" type="button" data-view="top" aria-pressed="true">From above</button>
+          <button class="anatomy__tab" type="button" data-view="side" aria-pressed="false">From the side</button>
+        </div>
         <div class="anatomy__figure">
-          <svg class="foot-svg" viewBox="0 0 557 1502" role="img"
+          <svg class="foot-svg foot-svg--top is-active" data-view="top" viewBox="0 0 557 1502" role="img"
                aria-label="Diagram of the bones of the right foot, seen from above">
-            <g class="bone" id="bone-calcaneus">
+            <g class="bone" data-bone="calcaneus">
               <path d="M331,1484 L257,1476 L236,1468 L221,1443 L210,1384 L231,1356 L230,1328 L259,1347 L279,1353 L311,1346 L341,1330 L354,1311 L366,1274 L397,1260 L408,1248 L414,1228 L414,1198 L408,1181 L394,1165 L379,1152 L358,1144 L336,1116 L318,1109 L293,1110 L272,1096 L266,1084 L266,1055 L288,1047 L319,1045 L383,1059 L430,1044 L434,1055 L419,1106 L418,1129 L435,1195 L436,1218 L428,1247 L398,1299 L403,1354 L384,1465 L331,1484Z"/>
             </g>
-            <g class="bone" id="bone-talus">
+            <g class="bone" data-bone="talus">
               <path d="M281,1335 L267,1332 L246,1314 L230,1309 L171,1317 L144,1288 L135,1264 L133,1191 L124,1173 L100,1150 L92,1126 L92,1077 L96,1061 L105,1052 L131,1044 L169,1041 L210,1045 L242,1054 L249,1062 L251,1094 L261,1110 L288,1129 L313,1126 L325,1129 L347,1158 L371,1167 L393,1190 L397,1222 L392,1242 L354,1262 L338,1305 L329,1317 L305,1330 L281,1335Z"/>
             </g>
-            <g class="bone" id="bone-navicular">
+            <g class="bone" data-bone="navicular">
               <path d="M89,1042 L82,1034 L83,1008 L110,943 L137,947 L173,939 L207,945 L244,937 L284,973 L284,1025 L279,1031 L249,1038 L204,1027 L163,1024 L115,1030 L89,1042Z"/>
             </g>
-            <g class="bone" id="bone-cuboid">
+            <g class="bone" data-bone="cuboid">
               <path d="M388,1041 L306,1027 L301,1019 L303,971 L337,931 L371,868 L378,864 L428,872 L447,909 L472,932 L458,960 L442,1022 L388,1041Z"/>
             </g>
-            <g class="bone" id="bone-cuneiforms">
+            <g class="bone" data-bone="cuneiforms">
               <path d="M138,929 L115,922 L109,875 L88,830 L81,787 L84,780 L140,761 L162,768 L177,793 L181,814 L167,919 L138,929Z"/>
               <path d="M207,927 L187,923 L184,905 L199,816 L262,811 L270,840 L249,916 L207,927Z"/>
               <path d="M295,953 L284,948 L265,925 L287,842 L283,814 L288,808 L300,807 L353,827 L357,852 L348,879 L325,918 L295,953Z"/>
             </g>
-            <g class="bone" id="bone-metatarsals">
+            <g class="bone" data-bone="metatarsals">
               <path d="M226,795 L198,795 L189,777 L210,741 L219,702 L229,471 L212,425 L206,384 L210,368 L218,364 L269,376 L266,405 L279,441 L262,481 L258,516 L268,597 L269,696 L283,755 L275,793 L226,795Z"/>
               <path d="M86,761 L76,760 L74,744 L63,738 L71,681 L69,631 L58,564 L39,500 L39,453 L22,419 L31,398 L53,391 L127,400 L149,453 L149,469 L132,520 L132,582 L147,649 L157,673 L176,699 L179,714 L176,736 L169,748 L134,744 L86,761Z"/>
               <path d="M364,810 L330,802 L296,784 L299,737 L312,707 L318,676 L318,568 L327,474 L312,438 L310,419 L317,399 L331,394 L355,399 L366,416 L357,443 L369,476 L355,527 L351,569 L364,810Z"/>
               <path d="M420,851 L378,846 L374,834 L383,808 L381,760 L399,634 L409,523 L407,505 L395,485 L397,455 L406,439 L435,432 L450,437 L464,461 L448,487 L451,516 L430,614 L427,685 L432,750 L425,785 L427,835 L425,848 L420,851Z"/>
               <path d="M495,929 L461,899 L441,856 L445,815 L469,751 L500,620 L501,597 L492,561 L495,543 L490,528 L498,520 L516,515 L534,533 L534,558 L539,573 L516,635 L508,676 L506,768 L509,860 L495,929Z"/>
             </g>
-            <g class="bone" id="bone-phalanges">
+            <g class="bone" data-bone="phalanges">
               <path d="M240,73 L220,67 L226,48 L222,25 L234,18 L246,25 L250,62 L240,73Z"/>
               <path d="M77,179 L56,178 L32,169 L25,162 L22,148 L24,139 L39,128 L51,103 L50,48 L67,38 L84,45 L100,77 L85,97 L81,112 L86,130 L103,152 L104,168 L99,174 L77,179Z"/>
               <path d="M339,127 L321,120 L328,98 L324,81 L331,75 L341,83 L340,102 L351,119 L339,127Z"/>
@@ -67,9 +71,55 @@ title: The Fitting — Bones, Measurements & Process
               <path d="M523,355 L504,351 L507,329 L532,333 L533,348 L523,355Z"/>
               <path d="M493,502 L487,494 L501,410 L502,375 L506,372 L527,374 L522,439 L536,498 L532,502 L516,497 L493,502Z"/>
             </g>
+            <g class="girths">
+              <path class="girth girth--ball" data-girth="ball" pathLength="100" d="M48,478 L532,600"/>
+              <path class="girth girth--instep" data-girth="instep" pathLength="100" d="M98,1010 L455,895"/>
+              <path class="girth girth--arch" data-girth="arch" pathLength="100" d="M118,1185 L438,1140"/>
+            </g>
+          </svg>
+
+          <svg class="foot-svg foot-svg--side" data-view="side" viewBox="0 -186 472 346" role="img"
+               aria-label="Diagram of the bones of the right foot from the side, outer edge facing">
+            <line class="foot-ground" x1="6" y1="141" x2="466" y2="141"/>
+            <path class="silhouette" d="M418,138 L399,130 L389,129 L373,120 L354,121 L346,131 L329,130 L315,132 L304,126 L293,130 L270,120 L256,117 L232,115 L206,118 L194,113 L193,101 L190,97 L176,99 L163,95 L147,95 L133,100 L104,104 L85,113 L70,129 L44,129 L33,125 L25,117 L18,88 L21,66 L26,56 L32,52 L48,51 L65,44 L75,35 L78,24 L83,19 L204,18 L217,28 L237,32 L256,41 L277,57 L339,83 L348,89 L405,96 L453,110 L451,127 L447,132 L440,135 L426,131 L418,138Z"/>
+            <g class="bone" data-bone="calcaneus">
+              <path d="M78,22 C60,24 40,34 27,52 C19,66 17,84 24,96 C31,106 52,106 68,101 C80,97 87,88 89,74 C91,60 88,40 84,30 C82,25 81,22 78,22 Z"/>
+            </g>
+            <g class="bone" data-bone="talus">
+              <path d="M97,54 C92,42 96,26 111,20 C124,15 138,20 142,33 C145,44 141,55 131,61 C119,67 104,64 97,54 Z"/>
+            </g>
+            <g class="bone" data-bone="navicular">
+              <path d="M147,49 C146,36 156,27 167,31 C176,34 178,46 171,53 C163,60 149,58 147,49 Z"/>
+            </g>
+            <g class="bone" data-bone="cuboid">
+              <path d="M100,63 L127,58 C136,57 143,63 144,71 C145,80 139,88 129,90 L108,92 C99,92 95,84 96,76 C96,70 97,65 100,63 Z"/>
+            </g>
+            <g class="bone" data-bone="cuneiforms">
+              <path d="M173,25 C182,21 196,22 204,28 C211,33 212,44 208,53 C203,62 192,66 182,62 C172,58 168,46 169,37 C169,32 170,28 173,25 Z"/>
+              <path d="M213,32 C222,30 232,35 236,44 C240,53 237,63 229,67 C220,71 210,67 207,58 C204,49 206,38 213,32 Z"/>
+            </g>
+            <g class="bone" data-bone="metatarsals">
+              <path d="M225,60 C240,58 254,64 262,74 C280,84 306,92 330,98 C348,102 362,108 370,116 C374,122 371,129 363,130 C348,131 330,126 312,119 C290,111 264,101 246,92 C233,86 222,76 220,68 C219,63 221,61 225,60 Z"/>
+              <path d="M247,45 C262,46 276,53 287,62 C308,73 334,81 356,88 C369,92 378,98 380,105 C381,111 376,115 368,114 C350,113 330,106 310,98 C289,89 268,79 254,69 C245,62 240,54 241,49 C242,46 244,45 247,45 Z"/>
+            </g>
+            <g class="bone" data-bone="phalanges">
+              <path d="M398,103 C410,97 428,97 440,102 C451,106 457,114 455,123 C453,133 440,139 426,138 C412,137 399,130 395,120 C392,113 393,107 398,103 Z"/>
+              <path d="M424,84 C434,79 447,80 454,86 C460,91 461,99 456,104 C450,110 437,111 428,107 C419,103 416,90 424,84 Z"/>
+              <path d="M443,66 C451,62 460,64 464,70 C468,76 466,83 459,85 C451,88 443,85 441,78 C439,73 440,69 443,66 Z"/>
+            </g>
+            <g class="girths">
+              <ellipse class="girth girth--ball" data-girth="ball" pathLength="100" cx="382" cy="90" rx="30" ry="54" transform="rotate(-14 382 90)"/>
+              <ellipse class="girth girth--instep" data-girth="instep" pathLength="100" cx="203" cy="58" rx="34" ry="80" transform="rotate(-4 203 58)"/>
+              <ellipse class="girth girth--arch" data-girth="arch" pathLength="100" cx="142" cy="46" rx="42" ry="96" transform="rotate(8 142 46)"/>
+            </g>
           </svg>
         </div>
         <p class="anatomy__caption"><span id="bone-caption">Your right foot, from above</span></p>
+        <ul class="girth-legend" aria-hidden="true">
+          <li class="leg--ball" data-girth="ball">Ball</li>
+          <li class="leg--instep" data-girth="instep">Instep</li>
+          <li class="leg--arch" data-girth="arch">Arch</li>
+        </ul>
       </div>
     </div>
 
@@ -86,6 +136,9 @@ title: The Fitting — Bones, Measurements & Process
             these bones. Get them right and the leather disappears; get them
             wrong and no amount of craftsmanship saves the shoe.
           </p>
+          <p class="note">Flip the diagram between the two views up there,
+          and keep an eye on the coloured loops &mdash; each one marks where
+          a measuring tape wraps.</p>
         </div>
       </article>
 
@@ -184,6 +237,52 @@ title: The Fitting — Bones, Measurements & Process
           and remember, your longest toe isn&rsquo;t always the big one.</p>
         </div>
       </article>
+
+      <article class="bone-card" data-girth="ball" data-bones="metatarsals phalanges" data-name="Angled ball girth" data-reveal>
+        <span class="chip">09</span>
+        <div>
+          <h2>Angled ball girth <em>&mdash; the tape crosses the knuckles</em></h2>
+          <p>
+            Tape slanted around the ball of your foot, taken square behind
+            the first metatarsal head and swept toward the little toe.
+            Shoemakers call this the <strong>angled ball girth</strong>; its
+            square-on sibling is the straight ball girth. We record it
+            standing &mdash; the heads spread under load.
+          </p>
+          <p class="note">What it sets: the volume of the forepart. Too tight
+          here, and no amount of extra length saves the shoe.</p>
+        </div>
+      </article>
+
+      <article class="bone-card" data-girth="instep" data-bones="cuneiforms navicular talus" data-name="Instep girth" data-reveal>
+        <span class="chip">10</span>
+        <div>
+          <h2>Instep girth <em>&mdash; over the crest</em></h2>
+          <p>
+            Tape around the waist of your foot, cresting over the instep
+            where the cuneiforms sit. Every maker finds that crest a little
+            differently &mdash; some feel for the groove between the first
+            and second metatarsal &mdash; so we note exactly where ours was
+            taken.
+          </p>
+          <p class="note">What it sets: how far apart your laces or strap can
+          sit, and whether a vamp clears your midfoot at all.</p>
+        </div>
+      </article>
+
+      <article class="bone-card" data-girth="arch" data-bones="talus calcaneus navicular cuboid" data-name="Arch girth" data-reveal>
+        <span class="chip">11</span>
+        <div>
+          <h2>Arch girth <em>&mdash; the big loop</em></h2>
+          <p>
+            Tape around the arch and the cone &mdash; the part of your foot
+            that rises toward the front of your ankle. Read together with the
+            short heel, it maps how your leg stacks itself over your foot.
+          </p>
+          <p class="note">What it sets: the throat line of boots and high
+          vamps &mdash; everything that has to clear this loop.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -193,9 +292,11 @@ title: The Fitting — Bones, Measurements & Process
     <header class="section-head" data-reveal>
       <p class="kicker">Calipers, tapes &amp; honesty</p>
       <h2>What we measure</h2>
-      <p class="lede">Eight measurements per foot, taken standing where the
-      bones have settled into their working shape. We fit the larger of your
-      two feet &mdash; nobody&rsquo;s feet are twins.</p>
+      <p class="lede">Centimetres, taken standing where the bones have settled
+      into their working shape &mdash; taped onto marked paper strips so
+      nothing gets rounded to a tidy number. The three loops you just saw give
+      us the girths; these give us the frame. We fit the larger of your two
+      feet &mdash; nobody&rsquo;s feet are twins.</p>
     </header>
 
     <div class="measure-grid">
@@ -204,26 +305,29 @@ title: The Fitting — Bones, Measurements & Process
           <path class="foot-outline" pathLength="100" d="M28 72 C28 50 44 42 58 46 C64 32 82 30 90 38 C96 24 112 22 118 32 C126 20 142 22 146 34 C154 24 166 28 166 40 C186 48 198 60 198 72 C198 96 170 104 140 104 L80 104 C48 104 28 92 28 72 Z"/>
           <line class="draw-line dim-line" pathLength="100" x1="24" y1="126" x2="202" y2="126"/>
           <path class="dim-tick fade-late" d="M24 120 V132 M202 120 V132 M28 122 l-5 4 5 4 M198 122 l5 4 -5 4"/>
-          <text class="svg-label" x="113" y="146" text-anchor="middle">total length</text>
+          <text class="svg-label" x="113" y="146" text-anchor="middle">heel &#8594; longest toe</text>
         </svg>
         <figcaption>
-          <h3>Length</h3>
-          <p>Heel to longest toe &mdash; which may be your second toe. Both
-          feet, fitted to the larger.</p>
+          <h3>Stick length</h3>
+          <p>From the back of the heel to the front of the longest toe on a
+          size stick &mdash; and the longest toe may well be your second.
+          Both feet.</p>
         </figcaption>
       </figure>
 
       <figure class="measure-card" data-reveal>
         <svg viewBox="0 0 260 150" aria-hidden="true">
           <path class="foot-outline" pathLength="100" d="M28 72 C28 50 44 42 58 46 C64 32 82 30 90 38 C96 24 112 22 118 32 C126 20 142 22 146 34 C154 24 166 28 166 40 C186 48 198 60 198 72 C198 96 170 104 140 104 L80 104 C48 104 28 92 28 72 Z"/>
-          <ellipse class="draw-line girth-ring" pathLength="100" cx="168" cy="70" rx="18" ry="40"/>
-          <line class="draw-line dim-line" pathLength="100" x1="168" y1="30" x2="168" y2="110"/>
-          <text class="svg-label" x="168" y="146" text-anchor="middle">ball width + girth</text>
+          <line class="draw-line dim-line" pathLength="100" x1="26" y1="62" x2="170" y2="62"/>
+          <line class="draw-line dim-line dashed" pathLength="100" x1="62" y1="100" x2="142" y2="100"/>
+          <path class="dim-tick fade-late" d="M26 56 V68 M170 56 V68 M62 94 V106 M142 94 V106"/>
+          <text class="svg-label" x="113" y="146" text-anchor="middle">widest forepart &#183; heel width</text>
         </svg>
         <figcaption>
-          <h3>Ball width &amp; girth</h3>
-          <p>Across the knuckles of the foot, and the tape wrapped around
-          them. The ball must land exactly where the shoe flexes.</p>
+          <h3>Widths</h3>
+          <p>Foot width across the widest part of the forepart, and heel
+          width from inside to outside &mdash; usually read off your paper
+          tracing rather than guessed.</p>
         </figcaption>
       </figure>
 
@@ -233,30 +337,101 @@ title: The Fitting — Bones, Measurements & Process
           <line class="ground-line" x1="20" y1="121" x2="240" y2="121"/>
           <line class="draw-line dim-line dashed" pathLength="100" x1="148" y1="44" x2="148" y2="119"/>
           <path class="dim-tick fade-late" d="M142 50 h12 M142 113 h12"/>
-          <text class="svg-label" x="148" y="140" text-anchor="middle">instep height</text>
+          <text class="svg-label" x="148" y="140" text-anchor="middle">highest point, off the floor</text>
         </svg>
         <figcaption>
-          <h3>Instep</h3>
-          <p>The height over your midfoot. High insteps slip out of low
-          vamps; we set the throat line accordingly.</p>
+          <h3>Instep height</h3>
+          <p>The height of the highest point of the instep above the ground
+          plane. High insteps slip out of low vamps; we set the throat line
+          accordingly.</p>
         </figcaption>
       </figure>
 
       <figure class="measure-card" data-reveal>
         <svg viewBox="0 0 260 150" aria-hidden="true">
-          <path class="foot-outline" pathLength="100" d="M46 120 Q48 88 66 78 Q86 68 98 82 Q116 104 138 103 Q172 101 194 80 Q210 66 220 84 Q228 100 226 120 Z"/>
+          <path class="foot-outline" pathLength="100" d="M40 118 L46 96 Q60 84 84 88 Q120 94 150 96 Q180 98 200 108 L206 118 Z"/>
           <line class="ground-line" x1="20" y1="121" x2="240" y2="121"/>
-          <path class="arch-gap" d="M96 96 Q120 116 148 108 L148 119 L96 119 Z"/>
-          <line class="draw-line dim-line dashed" pathLength="100" x1="122" y1="76" x2="122" y2="119"/>
-          <text class="svg-label" x="122" y="140" text-anchor="middle">arch type + navicular drop</text>
+          <line class="draw-line dim-line" pathLength="100" x1="44" y1="132" x2="202" y2="132"/>
+          <path class="dim-tick fade-late" d="M44 126 V138 M202 126 V138 M50 128 l-5 4 5 4 M196 128 l5 4 -5 4"/>
+          <text class="svg-label" x="123" y="148" text-anchor="middle">back of heel &#8594; ball joints</text>
         </svg>
         <figcaption>
-          <h3>Arch behaviour</h3>
-          <p>Flat, neutral, or high &mdash; read from a footprint test and by
-          watching the navicular rise from seated to standing.</p>
+          <h3>Arch length</h3>
+          <p>Also called heel-to-ball: along the ground plane from the back
+          of the heel to the metatarsal joints. If the ball of the shoe misses
+          this line, nothing else fits right.</p>
         </figcaption>
       </figure>
     </div>
+
+    <div class="boots-head" data-reveal>
+      <p class="kicker">Above the ankle</p>
+      <h3>Boots go higher</h3>
+      <p>Once the leather climbs past your ankle bones, three more
+      measurements decide whether the shaft moves with you or fights you.</p>
+    </div>
+
+    <div class="measure-grid">
+      <figure class="measure-card" data-reveal>
+        <svg viewBox="0 0 260 150" aria-hidden="true">
+          <path class="foot-outline" pathLength="100" d="M92 120 Q100 62 148 42 Q198 58 222 102 L226 120 Z"/>
+          <line class="ground-line" x1="20" y1="121" x2="240" y2="121"/>
+          <path class="tape-line draw-line" pathLength="100" d="M96 116 Q104 70 150 44"/>
+          <circle class="end-dot fade-late" cx="96" cy="116" r="3.4"/>
+          <circle class="end-dot fade-late" cx="150" cy="44" r="3.4"/>
+          <text class="svg-label" x="160" y="140" text-anchor="middle">heel point &#8594; top of instep</text>
+        </svg>
+        <figcaption>
+          <h3>Short heel</h3>
+          <p>Tape from the bottom-back point of the heel around to the top of
+          the instep. Critical for anything you slip into without laces &mdash;
+          it decides whether the vamp passes. It changes as the ankle bends,
+          so we take it twice.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="measure-card" data-reveal>
+        <svg viewBox="0 0 260 150" aria-hidden="true">
+          <path class="foot-outline" pathLength="100" d="M92 120 Q100 62 148 42 Q198 58 222 102 L226 120 Z"/>
+          <line class="ground-line" x1="20" y1="121" x2="240" y2="121"/>
+          <path class="tape-ghost draw-line" pathLength="100" d="M96 116 Q104 70 148 46"/>
+          <path class="tape-line draw-line" pathLength="100" d="M96 116 Q112 56 176 52"/>
+          <circle class="end-dot fade-late" cx="96" cy="116" r="3.4"/>
+          <circle class="end-dot fade-late" cx="176" cy="52" r="3.4"/>
+          <text class="svg-label" x="160" y="140" text-anchor="middle">heel point &#8594; point over arch</text>
+        </svg>
+        <figcaption>
+          <h3>Long heel</h3>
+          <p>Same starting point, longer reach: around to a point on the
+          instep directly over the arch &mdash; often over the intermediate
+          and lateral cuneiforms. This one locates fastenings like lacing.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="measure-card" data-reveal>
+        <svg viewBox="0 0 260 150" aria-hidden="true">
+          <path class="foot-outline" pathLength="100" d="M92 120 Q100 62 148 42 Q198 58 222 102 L226 120 Z"/>
+          <path class="foot-outline" d="M136 46 L136 20 Q136 14 144 14 L152 14 Q158 14 158 20 L158 52"/>
+          <line class="ground-line" x1="20" y1="121" x2="240" y2="121"/>
+          <line class="draw-line dim-line dashed" pathLength="100" x1="130" y1="66" x2="130" y2="119"/>
+          <line class="draw-line dim-line dashed" pathLength="100" x1="164" y1="52" x2="164" y2="119"/>
+          <path class="dim-tick fade-late" d="M124 72 h12 M124 113 h12 M158 58 h12 M158 113 h12"/>
+          <text class="svg-label" x="147" y="140" text-anchor="middle">each ankle bone, off the floor</text>
+        </svg>
+        <figcaption>
+          <h3>Ankle height</h3>
+          <p>The heights of both ankle bones above the ground plane &mdash;
+          they rarely match. Shaft tops, padding and stiffeners all key off
+          these two numbers.</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="fine-note" data-reveal>
+      Planning taller shafts? We&rsquo;ll also take the ankle girth just
+      above the ankle bone and calf girths at recorded heights above the heel
+      &mdash; five, seven inches, or wherever your calf is fullest.
+    </p>
 
     <aside class="callout" data-reveal>
       <h2>Have an orthopedist?</h2>
@@ -285,24 +460,32 @@ title: The Fitting — Bones, Measurements & Process
           <h3>The conversation</h3>
           <p>We start sitting down: what you wear now, what hurts, what
           you&rsquo;ve given up on. Shoes you love and shoes you never wear
-          both teach us something.</p>
+          both teach us something. Morning slots measure best &mdash; feet
+          are least swollen first thing.</p>
         </div>
       </li>
       <li class="step" data-step data-reveal>
         <span class="step__dot">2</span>
         <div class="step__body">
-          <h3>Barefoot examination</h3>
-          <p>Feet inspected, old calluses and pressure marks read like margin
-          notes. Then all eight measurements, standing, both feet.</p>
+          <h3>Tracing &amp; measuring</h3>
+          <p>Seated, hips, knees and ankles at right angles. Each foot is
+          traced on folder stock &mdash; pencil upright for the outline,
+          angled to catch the bite of the arch. Then centimetres, on marked
+          paper strips that record exactly where the tape sat: lengths,
+          widths, heights, and every girth from the loops above. Then all of
+          it again with legs crossed &mdash; ankles rotate, and heels move
+          more than you&rsquo;d think.</p>
         </div>
       </li>
       <li class="step" data-step data-reveal>
         <span class="step__dot">3</span>
         <div class="step__body">
-          <h3>Gait &amp; arch read</h3>
-          <p>You walk a strip of paper and an ink mat while we watch heel
-          strike, roll-through, and toe-off. The wet footprint test confirms
-          your arch type.</p>
+          <h3>Gait &amp; pressure read</h3>
+          <p>You walk a strip of paper while we watch heel strike,
+          roll-through, and toe-off. A wet footprint and a standing pedigraph
+          &mdash; your weight-bearing edge inked and traced &mdash; confirm
+          how your arch actually behaves under load. We fit what&rsquo;s
+          there, not what a size chart wishes were there.</p>
         </div>
       </li>
       <li class="step" data-step data-reveal>

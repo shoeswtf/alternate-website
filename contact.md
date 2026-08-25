@@ -27,15 +27,15 @@ title: Book a Fitting
       usually with questions about your feet.</p>
     </div>
 
-    <form class="contact-form" action="mailto:{{ site.email }}" method="post" enctype="text/plain" data-reveal>
-      <label>Name<input type="text" name="name" required></label>
-      <label>Email<input type="email" name="email" required></label>
-      <label>What are you dreaming of?
-        <textarea name="message" rows="5" placeholder="Everyday derbies, wedding boots, a replacement for the pair you wore out&hellip;"></textarea>
-      </label>
-      <button class="btn" type="submit">Send</button>
-      <p class="contact-card__fine">This demo form opens your email client;
-      wire it to Formspree or Netlify Forms when you deploy.</p>
-    </form>
+    <div class="contact-card" data-reveal>
+      <h2>What to expect</h2>
+      <p>Fittings run about ninety minutes, Tuesday through Saturday,
+      by appointment. Morning slots are kindest &mdash; feet are smallest
+      then, and we fit for that.</p>
+      <p>Bring the socks or hosiery you actually wear, plus the shoes you
+      love and the shoes you never wear. Both are evidence.</p>
+      <p>You leave with your measurement sheet and a clear quote. Booking
+      the build is up to you.</p>
+    </div>
   </div>
 </section>
