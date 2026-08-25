@@ -7,52 +7,35 @@ title: The Studio
 <section class="page-head">
   <div class="shell">
     <p class="kicker">About us</p>
-    <h1>A bench, some knives,<br>and a wall of wooden feet.</h1>
+    <h1>Proud to be in a town full of craftspeople.</h1>
   </div>
 </section>
 
 <section class="prose-section">
   <div class="shell prose" data-reveal>
-    <p>
-      {{ site.title }} is a two-bench shoemaking studio in {{ site.city }}.
-      We don&rsquo;t keep shelves of stock sizes; we keep shelves of lasts
-      &mdash; the wooden forms around which every shoe is built &mdash; each
-      one adjusted for a particular pair of feet.
-    </p>
+    <h2>The process</h2>
     <p>
       Every commission starts with the fitting you can read about on
-      <a href="{{ '/fitting/' | relative_url }}">The Fitting page</a>: bones,
-      measurements, gait. From there we select and adjust the last, cut the
-      leather by hand, and close the uppers before lasting them over the
-      wood &mdash; the same sequence used for centuries, just with better
-      coffee.
+      <a href="{{ '/fitting/' | relative_url }}">The Fitting page</a>,
+      From there we select and adjust the last, draft the pattern standard,
+      pattern and make a fitter, and see how it fits. We then adjust it
+      as many times as needed to get a perfect fit.
     </p>
 
     <h2>What &ldquo;made-to-measure&rdquo; means</h2>
     <p>
-      Made-to-measure sits between ready-to-wear and full bespoke. We
-      don&rsquo;t carve a unique last for every customer. Instead we take
-      your measurements and fit an existing last to your foot &mdash;
-      adjusting its shape, volume, and stance &mdash; then build your shoe
-      on it. Most of bespoke&rsquo;s fit, at a friendlier price and
-      timeline.
+      Unlike full bespoke shoemakers, we do not make lasts from scratch
+      for every customer. Instead we take your measurements and fit a new 
+      or existing last to your foot. We think you'll still love the fit.
     </p>
 
-    <h2>How we build</h2>
+    <h2>Build options</h2>
     <ul>
-      <li><strong>Goodyear welted</strong> &mdash; resoleable for decades.</li>
-      <li><strong>Veg-tanned leathers</strong> from tanneries we visit.</li>
-      <li><strong>Cork beddings</strong> that mold to your footprint as you wear them.</li>
-      <li><strong>One pair at a time</strong> &mdash; no production line.</li>
+      <li><strong>Goodyear welted</strong> classic American workwear.</li>
+      <li><strong>Stitchdown</strong> sans insoling.</li>
+      <li><strong>Cemented construction</strong> for a thinner, sleeker dress shoe finish.</li>
+      <li><strong>Blake rapid stitch</strong> &mdash; I can work with a cobbler to stitch this.</li>
     </ul>
-
-    <h2>Who makes your shoes</h2>
-    <p>
-      The studio is run by two makers and an apprentice, with a dog who
-      supervises quality control. Between us we&rsquo;ve made everything from
-      alpine boots to opera pumps &mdash; but most days it&rsquo;s oxfords,
-      derbies, and boots meant to walk real miles.
-    </p>
   </div>
 </section>
 

@@ -53,7 +53,7 @@ A `CNAME` file is already included. To finish wiring it up:
 
 ## Customizing
 
-- **Name, address, email, phone** → top of `_config.yml`
+- **Name, email, city** → top of `_config.yml`
 - **Colors & fonts** → variables at the top of `assets/css/style.scss`
 - **Bone copy / measurements / steps** → `fitting.html`
 - **Foot diagrams** → the two SVGs inside `fitting.html`. The top view was
