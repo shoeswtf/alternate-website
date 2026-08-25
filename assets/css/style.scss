@@ -1,16 +1,32 @@
 ---
 ---
-$paper: #f7f1e5;
-$paper-deep: #efe5d2;
-$panel: #fffdf7;
-$ink: #26190f;
-$ink-soft: #6b5642;
-$leather: #8a5a33;
-$leather-dark: #5d3a1f;
-$rust-dark: #7f3b1e;
-$tan: #caa06a;
-$rust: #b0522a;
-$line: rgba(38, 25, 15, 0.14);
+$base03: #002b36;
+$base02: #073642;
+$base01: #586e75;
+$base00: #657b83;
+$base0: #839496;
+$base1: #93a1a1;
+$base2: #eee8d5;
+$base3: #fdf6e3;
+$yellow: #b58900;
+$orange: #cb4b16;
+$red: #dc322f;
+$magenta: #d33682;
+$violet: #6c71c4;
+$blue: #268bd2;
+$cyan: #2aa198;
+$green: #859900;
+
+$paper: $base03;
+$paper-deep: $base02;
+$panel: $base02;
+$ink: $base1;
+$ink-soft: $base0;
+$leather: $yellow;
+$tan: $yellow;
+$rust: $orange;
+$rust-dark: $red;
+$line: rgba($base1, 0.22);
 
 $font-display: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
 $font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -96,7 +112,7 @@ a {
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 24px rgba(176, 82, 42, 0.28);
+    box-shadow: 0 10px 24px rgba(203, 75, 22, 0.35);
   }
 
   &--ghost {
@@ -104,15 +120,15 @@ a {
     color: $ink;
     border-color: $ink;
 
-    &:hover { box-shadow: 0 10px 24px rgba(38, 25, 15, 0.16); }
+    &:hover { box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45); }
   }
 
   &--invert {
-    background: $paper;
-    border-color: $paper;
-    color: $leather-dark;
+    background: $base1;
+    border-color: $base1;
+    color: $base03;
 
-    &:hover { box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25); }
+    &:hover { box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5); }
   }
 }
 
@@ -189,8 +205,8 @@ a {
   position: relative;
   padding-block: clamp(5rem, 14vh, 9rem) clamp(4rem, 10vh, 7rem);
   background:
-    radial-gradient(60% 90% at 80% 0%, rgba(202, 160, 106, 0.16), transparent 70%),
-    radial-gradient(50% 80% at 10% 100%, rgba(138, 90, 51, 0.1), transparent 70%);
+    radial-gradient(60% 90% at 80% 0%, rgba(181, 137, 0, 0.13), transparent 70%),
+    radial-gradient(50% 80% at 10% 100%, rgba(203, 75, 22, 0.09), transparent 70%);
   text-align: left;
 
   .shell > * + * { margin-top: 1.4rem; }
@@ -268,13 +284,13 @@ a {
     justify-content: center;
     gap: 0.9rem;
     background:
-      radial-gradient(75% 75% at 50% 40%, #fbf7ee 0%, $paper-deep 78%),
-      radial-gradient(rgba($ink, 0.075) 1px, transparent 1.4px);
+      radial-gradient(75% 75% at 50% 40%, $panel 0%, $paper 78%),
+      radial-gradient(rgba($ink, 0.06) 1px, transparent 1.4px);
     background-size: auto, 22px 22px;
     border: 1px solid $line;
     border-radius: 22px;
     padding: clamp(1rem, 3vw, 2rem);
-    box-shadow: inset 0 0 0 6px rgba($paper, 0.55), 0 24px 48px -32px rgba(38, 25, 15, 0.35);
+    box-shadow: inset 0 0 0 6px rgba($base1, 0.05), 0 24px 48px -32px rgba(0, 0, 0, 0.5);
   }
 
   &__figure {
@@ -324,7 +340,7 @@ a {
   letter-spacing: 0.02em;
   padding: 0.4em 1.15em;
   border-radius: 999px;
-  border: 1.5px solid rgba($leather-dark, 0.35);
+  border: 1.5px solid rgba($base0, 0.4);
   background: transparent;
   color: $ink-soft;
   cursor: pointer;
@@ -376,8 +392,8 @@ a {
   }
 
   .leg--ball { --dot: #{$rust}; }
-  .leg--instep { --dot: #3e7c74; }
-  .leg--arch { --dot: #{$leather-dark}; }
+  .leg--instep { --dot: #2aa198; }
+  .leg--arch { --dot: #268bd2; }
 }
 
 .foot-svg {
@@ -398,33 +414,33 @@ a {
   }
 
   .foot-ground {
-    stroke: rgba($leather-dark, 0.5);
+    stroke: rgba($base0, 0.5);
     stroke-width: 1.6;
     stroke-dasharray: 5 6;
     stroke-linecap: round;
   }
 
   .silhouette {
-    fill: rgba($paper-deep, 0.55);
-    stroke: rgba($leather-dark, 0.4);
+    fill: rgba($paper, 0.4);
+    stroke: rgba($base1, 0.4);
     stroke-width: 1.6;
     stroke-linejoin: round;
   }
 
   .bone {
-    fill: #e2d2ba;
-    stroke: rgba($leather-dark, 0.45);
+    fill: $base1;
+    stroke: rgba($base1, 0.45);
     stroke-width: 1.4;
     stroke-linejoin: round;
     opacity: 0.32;
     transition: opacity 0.45s ease, fill 0.45s ease, filter 0.45s ease;
 
-    &--context { fill: #d8cbb4; opacity: 0.22; }
+    &--context { fill: $base0; opacity: 0.22; }
 
     &.is-lit {
       fill: $tan;
       opacity: 1;
-      filter: drop-shadow(0 6px 10px rgba(141, 86, 34, 0.45));
+      filter: drop-shadow(0 6px 10px rgba(181, 137, 0, 0.5));
     }
   }
 
@@ -443,8 +459,8 @@ a {
   }
 
   .girth--ball { stroke: $rust; }
-  .girth--instep { stroke: #3e7c74; }
-  .girth--arch { stroke: $leather-dark; }
+  .girth--instep { stroke: #2aa198; }
+  .girth--arch { stroke: #268bd2; }
 }
 
 .bone-card {
@@ -458,7 +474,7 @@ a {
     border-left: 4px solid $rust;
     border-radius: 16px;
     padding: clamp(1.4rem, 3vw, 2rem);
-    box-shadow: 0 20px 40px -30px rgba(38, 25, 15, 0.4);
+    box-shadow: 0 20px 40px -30px rgba(0, 0, 0, 0.45);
     max-width: 52ch;
   }
 
@@ -512,14 +528,14 @@ a {
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 22px 44px -28px rgba(38, 25, 15, 0.45);
+    box-shadow: 0 22px 44px -28px rgba(0, 0, 0, 0.5);
   }
 
   svg {
     display: block;
     width: 100%;
     height: auto;
-    background: linear-gradient(180deg, #fbf6ea, $paper-deep);
+    background: linear-gradient(180deg, $panel, $paper);
     border-bottom: 1px solid $line;
   }
 
@@ -539,7 +555,7 @@ a {
 .foot-outline,
 .ground-line {
   fill: rgba($paper-deep, 0.6);
-  stroke: $leather-dark;
+  stroke: $base0;
   stroke-width: 2;
 }
 
@@ -659,7 +675,7 @@ a {
     top: 6px;
     bottom: 6px;
     width: 2px;
-    background: rgba($leather-dark, 0.18);
+    background: rgba($base1, 0.15);
   }
 
   &::after {
@@ -693,7 +709,7 @@ a {
     display: grid;
     place-items: center;
     background: $paper;
-    border: 2px solid rgba($leather-dark, 0.35);
+    border: 2px solid rgba($base0, 0.5);
     color: $ink-soft;
     font-size: 0.85rem;
     transition: background 0.35s ease, border-color 0.35s ease, color 0.35s ease, transform 0.35s ease;
@@ -720,20 +736,22 @@ a {
 
   &.is-done &__body {
     border-color: rgba($rust, 0.4);
-    box-shadow: 0 16px 32px -26px rgba(176, 82, 42, 0.55);
+    box-shadow: 0 16px 32px -26px rgba(203, 75, 22, 0.5);
   }
 }
 
 .cta-band {
-  background: $leather-dark;
-  color: $paper;
+  background: $panel;
+  border-top: 1px solid $line;
+  border-bottom: 1px solid $line;
+  color: $base1;
   text-align: center;
   padding-block: clamp(4rem, 9vw, 6rem);
 
   &__inner > * + * { margin-top: 1rem; }
 
   h2 { color: inherit; }
-  p { margin-inline: auto; color: rgba($paper, 0.8); }
+  p { margin-inline: auto; color: $ink-soft; }
 }
 
 .features { padding-block: clamp(4rem, 9vw, 6.5rem); }
@@ -756,7 +774,7 @@ a {
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 24px 44px -30px rgba(38, 25, 15, 0.5);
+    box-shadow: 0 24px 44px -30px rgba(0, 0, 0, 0.5);
     border-color: rgba($rust, 0.45);
   }
 
@@ -766,8 +784,8 @@ a {
     width: 54px;
     height: 54px;
     border-radius: 14px;
-    background: rgba($tan, 0.2);
-    color: $leather-dark;
+    background: rgba($tan, 0.15);
+    color: $tan;
     margin-bottom: 1.1rem;
 
     svg { width: 34px; height: 34px; }
@@ -806,7 +824,7 @@ a {
 
 .page-head {
   padding-block: clamp(4rem, 10vh, 7rem) clamp(2rem, 5vh, 3.5rem);
-  background: radial-gradient(60% 90% at 85% 0%, rgba(202, 160, 106, 0.16), transparent 70%);
+  background: radial-gradient(60% 90% at 85% 0%, rgba(181, 137, 0, 0.13), transparent 70%);
 }
 
 .prose-section { padding-block: 1rem clamp(4rem, 8vw, 6rem); }
@@ -862,7 +880,7 @@ a {
     font: inherit;
     font-weight: 400;
     padding: 0.7rem 0.9rem;
-    border: 1px solid rgba($leather-dark, 0.35);
+    border: 1px solid rgba($base0, 0.4);
     border-radius: 10px;
     background: $paper;
     color: $ink;
@@ -878,17 +896,18 @@ a {
 }
 
 .site-footer {
-  background: $ink;
-  color: rgba($paper, 0.82);
+  background: $panel;
+  border-top: 1px solid $line;
+  color: $ink-soft;
   padding-block: 3rem;
 
-  a { color: $tan; }
+  a { color: $cyan; }
 
   h3 {
     font-size: 0.85rem;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: rgba($paper, 0.55);
+    color: rgba($base1, 0.6);
     margin: 0 0 0.6rem;
   }
 
@@ -903,10 +922,10 @@ a {
   &__brand {
     font-family: $font-display;
     font-size: 1.2rem;
-    color: $paper;
+    color: $base1;
   }
 
-  &__fine { font-size: 0.82rem; color: rgba($paper, 0.45); }
+  &__fine { font-size: 0.82rem; color: rgba($base0, 0.6); }
 }
 
 [data-reveal] {
