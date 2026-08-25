@@ -14,7 +14,7 @@ title: The Studio
 <section class="prose-section">
   <div class="shell prose" data-reveal>
     <p>
-      {{ site.title }} is a two-bench shoemaking studio in {{ site.city }}.
+      {{ site.title }} is a small shoemaking studio in {{ site.city }}.
       We don&rsquo;t keep shelves of stock sizes; we keep shelves of lasts
       &mdash; the wooden forms around which every shoe is built &mdash; each
       one adjusted for a particular pair of feet.
@@ -48,10 +48,9 @@ title: The Studio
 
     <h2>Who makes your shoes</h2>
     <p>
-      The studio is run by two makers and an apprentice, with a dog who
-      supervises quality control. Between us we&rsquo;ve made everything from
-      alpine boots to opera pumps &mdash; but most days it&rsquo;s oxfords,
-      derbies, and boots meant to walk real miles.
+      The studio is run by one maker &mdash; me. I&rsquo;ve made everything
+      from alpine boots to opera pumps &mdash; but most days it&rsquo;s
+      oxfords, derbies, and boots meant to walk real miles.
     </p>
   </div>
 </section>
